@@ -7,7 +7,7 @@
     "client": "cd Frontend && npm start",
     "back": "cd Backend && nodemon server.js",
     "dev": "concurrently \"npm run back\" \"npm run client\"",
-    "build": "react-scripts build",
+    "build": "cd Frontend react-scripts build && cd Backend react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
     
